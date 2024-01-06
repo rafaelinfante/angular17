@@ -13,5 +13,5 @@ import {FeaturesComponent} from "./features/features.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular17';
+
 }
