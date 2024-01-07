@@ -1,3 +1,9 @@
-body {
-  padding-top: 70px;
+body, app-root {
+  display:flex!important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+main > .container-fluid {
+  padding: 70px 15px 0;
 }/* You can add global styles to this file, and also import other style files */
