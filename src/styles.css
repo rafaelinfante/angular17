@@ -1,4 +1,4 @@
-body, app-root {
+body, app-root, app-backoffice, app-auth {
   display:flex!important;
   flex-direction: column !important;
   height: 100% !important;

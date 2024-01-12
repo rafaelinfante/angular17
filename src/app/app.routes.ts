@@ -1,13 +1,23 @@
 import {Routes} from '@angular/router';
-import {HomeComponent} from "./home/home.component";
-import {FeaturesComponent} from "./features/features.component";
-import {ContactComponent} from "./contact/contact.component";
-import {NotFoundComponent} from "./not-found/not-found.component";
+
+
+const authRoutes = () => import('./auth/auth.routes').then((m) => m.routes);
+const backofficeRoutes = () => import('./backoffice/backoffice.routes').then((m) => m.routes);
 
 export const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: "home", component: HomeComponent},
-  {path: "features", component: FeaturesComponent},
-  {path: "contact", component: ContactComponent},
-  {path: "**", component: NotFoundComponent}
+  {
+    path: '',
+    children: [
+      {path: '', redirectTo: "auth", pathMatch: 'full'},
+      {
+        path: 'auth',
+        loadChildren: authRoutes,
+      },
+      {
+        path: 'backoffice',
+        loadChildren: backofficeRoutes
+      },
+    ],
+  },
+  {path: '**', redirectTo: '/'},
 ];

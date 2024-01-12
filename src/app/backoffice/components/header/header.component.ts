@@ -1,7 +1,8 @@
 import {Component} from '@angular/core';
 import {RouterLink, RouterLinkActive} from "@angular/router";
-import {RouteInfo} from "../_shared/interfaces/app-interfaces";
-import {MENU_ROUTES} from "../_shared/configs/menu-routes.config";
+import {RouteInfo} from "../../../_shared/interfaces/app-interfaces";
+import {MENU_ROUTES} from "../../../_shared/configs/menu-routes.config";
+
 
 @Component({
   selector: 'app-header',
