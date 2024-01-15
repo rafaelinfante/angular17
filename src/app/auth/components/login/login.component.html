@@ -1,24 +1,22 @@
-<br/>
-<br/>
+<br />
+<br />
 <div class="form-signin w-100 m-auto card text-center">
   <form>
-    <img class="mb-4" src="assets/images/corinthians.png" alt="" height="87">
+    <img class="mb-4" src="assets/images/corinthians.png" alt="" height="87" />
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
       <label for="floatingInput">Email address</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
       <label for="floatingPassword">Password</label>
     </div>
     <div class="my-3 d-flex justify-content-between">
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="rememberme">
-        <label class="form-check-label ms-1" for="rememberme">
-          Remember me
-        </label>
+        <input class="form-check-input" type="checkbox" value="" id="rememberme" />
+        <label class="form-check-label ms-1" for="rememberme"> Remember me </label>
       </div>
       <div class="me-1">
         <a href="">Forgot password?</a>
@@ -31,10 +29,10 @@
       <div class="line-separator"></div>
     </div>
     @for (signInOption of signInProviders; track signInOption.provider) {
-        <button class="btn btn-lg btn-light btn-block btn-outline d-flex align-items-center w-100 py-2 my-2">
-          <i class="{{signInOption.icon}}"></i>
-          <span class="flex-grow-1 text-center">Sign in with {{signInOption.provider}}</span>
-        </button>
+      <button class="btn btn-lg btn-light btn-block btn-outline d-flex align-items-center w-100 py-2 my-2">
+        <i class="{{ signInOption.icon }}"></i>
+        <span class="flex-grow-1 text-center">Sign in with {{ signInOption.provider }}</span>
+      </button>
     }
   </form>
 </div>

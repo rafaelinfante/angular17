@@ -1,16 +1,16 @@
-import {RouteInfo} from "../interfaces/backoffice-interfaces";
+import { RouteInfo } from '../interfaces/backoffice-interfaces';
 
 export const MENU_ROUTES: RouteInfo[] = [
   {
     path: 'home',
-    title: 'Home'
+    title: 'Home',
   },
   {
     path: 'features',
-    title: 'Features'
+    title: 'Features',
   },
   {
     path: 'contact',
-    title: 'Contact'
-  }
+    title: 'Contact',
+  },
 ];

@@ -1,24 +1,24 @@
-import {SignInProviders} from "../interfaces/auth-interfaces";
+import { SignInProviders } from '../interfaces/auth-interfaces';
 
 export const SIGNIN_PROVIDERS: SignInProviders[] = [
   {
     provider: 'Google',
-    icon: 'bi bi-google'
+    icon: 'bi bi-google',
   },
   {
     provider: 'Apple',
-    icon: 'bi bi-apple'
+    icon: 'bi bi-apple',
   },
   {
     provider: 'GitHub',
-    icon: 'bi bi-github'
+    icon: 'bi bi-github',
   },
   {
     provider: 'Facebook',
-    icon: 'bi bi-facebook'
+    icon: 'bi bi-facebook',
   },
   {
     provider: 'LinkedIn',
-    icon: 'bi bi-linkedin'
-  }
+    icon: 'bi bi-linkedin',
+  },
 ];
