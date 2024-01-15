@@ -16,6 +16,13 @@
         "plugin:prettier/recommended"
       ],
       "rules": {
+        "@angular-eslint/use-lifecycle-interface": "error",
+        "@angular-eslint/no-output-on-prefix": "warn",
+        "@angular-eslint/no-input-rename": "warn",
+        "@angular-eslint/no-output-native": "warn",
+        "prettier/prettier": "error",
+        "arrow-body-style": "off",
+        "prefer-arrow-callback": "off",
         "@angular-eslint/directive-selector": [
           "error",
           {

@@ -9,7 +9,8 @@
     "test": "ng test",
     "serve:ssr:angular17": "node dist/angular17/server/server.mjs",
     "lint": "ng lint",
-    "prettier": "npx prettier --write ."
+    "lint:fix": "ng lint --fix",
+    "format": "npx prettier --write ."
   },
   "private": true,
   "dependencies": {
