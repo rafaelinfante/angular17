@@ -1,5 +1,8 @@
-body, app-root, app-backoffice, app-auth {
-  display:flex!important;
+body,
+app-root,
+app-backoffice,
+app-auth {
+  display: flex !important;
   flex-direction: column !important;
   height: 100% !important;
 }
@@ -7,4 +10,3 @@ body, app-root, app-backoffice, app-auth {
 main > .container-fluid {
   padding: 70px 15px 0;
 }
-

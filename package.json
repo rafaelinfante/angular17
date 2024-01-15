@@ -10,7 +10,7 @@
     "serve:ssr:angular17": "node dist/angular17/server/server.mjs",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
-    "format": "npx prettier --write ."
+    "prettier": "npx prettier --write ."
   },
   "private": true,
   "dependencies": {
