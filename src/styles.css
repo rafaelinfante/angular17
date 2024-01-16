@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/Roboto-Regular.ttf');
+}
+
 body,
 app-root,
 app-backoffice,
@@ -5,6 +10,7 @@ app-auth {
   display: flex !important;
   flex-direction: column !important;
   height: 100% !important;
+  font-family: Roboto;
 }
 
 main > .container-fluid {
