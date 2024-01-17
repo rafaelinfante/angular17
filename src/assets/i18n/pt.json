@@ -1,0 +1,8 @@
+{
+  "LANGUAGE": "pt",
+
+  "auth": {
+    "SIGNIN": "Login"
+  },
+  "backoffice": {}
+}
