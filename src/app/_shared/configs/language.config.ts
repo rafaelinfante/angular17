@@ -1,5 +1,5 @@
-import {Language} from "../interfaces/language.interfaces";
-import {LANGUAGE_FLAGS_PATH} from "../constants/language.constants";
+import { Language } from '../interfaces/language.interfaces';
+import { LANGUAGE_FLAGS_PATH } from '../constants/language.constants';
 
 /*
 export const LANGUAGES: Language[] = [

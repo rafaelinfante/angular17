@@ -10,5 +10,9 @@
     "OR": "ou",
     "SIGNIN_WITH": "Entrar com"
   },
-  "backoffice": {}
+  "backoffice": {
+    "HOME": "Início",
+    "FEATURES": "Recursos",
+    "CONTACT": "Contato"
+  }
 }

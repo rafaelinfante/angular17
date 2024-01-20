@@ -1,12 +1,20 @@
-<div class="dropdown bg-white">
-  <a class="btn btn-sm btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+<div class="dropdown">
+  <a
+    class="btn btn-sm dropdown-toggle"
+    [ngClass]="languageService.isDarkThemeEnabled() ? 'btn-dark' : 'btn-light'"
+    href="#"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false">
     <img [src]="selectedLanguage.image" alt="" height="20" />
   </a>
 
-  <ul class="dropdown-menu" style="min-width: auto;">
+  <ul class="dropdown-menu min-width-auto dropdown-menu-dark" [ngClass]="{ 'dropdown-menu-dark': languageService.isDarkThemeEnabled() }">
     <!-- @for (language of languages; track language.id){  -->
-    @for (language of languagesMap.values(); track language.id){
-      <li><a class="dropdown-item" (click)="onLanguageChange(language)"><img [src]="language.image" alt="" height="20" /></a></li>
+    @for (language of languagesMap.values(); track language.id) {
+      <li>
+        <a class="dropdown-item" (click)="onLanguageChange(language)"><img [src]="language.image" alt="" height="20" /></a>
+      </li>
     }
   </ul>
 </div>

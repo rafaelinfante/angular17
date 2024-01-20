@@ -10,5 +10,9 @@
     "OR": "or",
     "SIGNIN_WITH": "Sign In with"
   },
-  "backoffice": {}
+  "backoffice": {
+    "HOME": "Home",
+    "FEATURES": "Features",
+    "CONTACT": "Contact"
+  }
 }
