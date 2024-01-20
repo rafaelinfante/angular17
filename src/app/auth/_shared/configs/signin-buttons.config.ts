@@ -1,4 +1,4 @@
-import { SignInProviders } from '../interfaces/auth-interfaces';
+import { SignInProviders } from '../interfaces/auth.interfaces';
 
 export const SIGNIN_PROVIDERS: SignInProviders[] = [
   {

@@ -1,0 +1,12 @@
+<div class="dropdown bg-white">
+  <a class="btn btn-sm btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <img [src]="selectedLanguage.image" alt="" height="20" />
+  </a>
+
+  <ul class="dropdown-menu" style="min-width: auto;">
+    <!-- @for (language of languages; track language.id){  -->
+    @for (language of languagesMap.values(); track language.id){
+      <li><a class="dropdown-item" (click)="onLanguageChange(language)"><img [src]="language.image" alt="" height="20" /></a></li>
+    }
+  </ul>
+</div>
