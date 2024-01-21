@@ -3,6 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { LANGUAGES_MAP } from '../configs/language.config';
 import { APP_DEFAULT_LANGUAGE } from '../constants/language.constants';
 import { Language } from '../interfaces/language.interfaces';
+import { BrowserStorageService } from './browser-storage.service';
 
 @Injectable({
   providedIn: 'root',
@@ -11,7 +12,10 @@ export class LanguageService {
   private isDarkTheme: boolean = false;
   private selectedLanguage!: Language;
 
-  constructor(private translate: TranslateService) {}
+  constructor(
+    private translate: TranslateService,
+    private browserStorage: BrowserStorageService
+  ) {}
 
   initializeLanguage(): void {
     this.translate.setDefaultLang(APP_DEFAULT_LANGUAGE);
